@@ -1,0 +1,99 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+
+body {
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    line-height: 1.6; 
+  }
+
+.header {
+    padding : 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    &__title {
+        color : white;
+        font-size: 2rem;
+    }
+
+    &__navbar{
+        background-color: #004080; 
+        padding: 1rem 0; 
+        text-align: center; 
+    }
+    &__logo {
+        width: 50px; 
+        height: 50px; 
+        border-radius: 1px; 
+        float : left;
+        margin-left : 1rem;
+      } 
+    &__reserva a{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: $color_boton_cita;
+    color: $color_letra_blanco; 
+    text-decoration: none; 
+    border-radius: 5px;
+    margin-top: 1rem; 
+    margin-left : 1rem;
+    &:hover { 
+        background-color: darken($color_boton_cita, 10%); 
+    }        
+    }        
+      
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+    gap: 2rem;
+}
+
+.nav__list a{
+    color : $color_letra_blanco;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav__list a:hover {
+    text-decoration: underline; 
+  }
+
+
+  @media (max-width : 1024px) {
+    .header__reserva a{
+        font-size: 90%;
+    }     
+    .header__navbar{
+        font-size: 90%;
+    }        
+}  
+
+@media (max-width : 768px) {
+    .nav__list {
+        flex-direction: column;
+    }
+    .header__reserva a{
+        font-size: 70%;
+    }
+    .header__navbar{
+        font-size: 70%;
+    }    
+
+
+}
+
+@media (max-width : 480px) {
+
+    .header__reserva a{
+        font-size: 50%;
+    }    
+    .header__navbar{
+        font-size: 50%;
+    }        
+}

@@ -1,0 +1,475 @@
+.contacto__button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.contacto__button:hover {
+  background-color: #217dbb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.header__title {
+  color: white;
+  font-size: 2rem;
+}
+.header__navbar {
+  background-color: #004080;
+  padding: 1rem 0;
+  text-align: center;
+}
+.header__logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 1px;
+  float: left;
+  margin-left: 1rem;
+}
+.header__reserva a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ff5733;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.header__reserva a:hover {
+  background-color: #ff2d00;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav__list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav__list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .header__reserva a {
+    font-size: 90%;
+  }
+  .header__navbar {
+    font-size: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .nav__list {
+    flex-direction: column;
+  }
+  .header__reserva a {
+    font-size: 70%;
+  }
+  .header__navbar {
+    font-size: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .header__reserva a {
+    font-size: 50%;
+  }
+  .header__navbar {
+    font-size: 50%;
+  }
+}
+.footer__text {
+  margin-left: 1rem;
+  bottom: 0;
+  right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .footer__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__text {
+    font-size: 8px;
+  }
+}
+#bienvenida {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#servicios {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.servicios__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.servicio__item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#testimonios {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.testimonios__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.testimonio__responsable {
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  .bienvenida__title {
+    font-size: 90%;
+  }
+  .bienvenida__content {
+    font-size: 70%;
+  }
+  .vision__title {
+    font-size: 80%;
+  }
+  .mision__title {
+    font-size: 80%;
+  }
+  .mision__content {
+    font-size: 70%;
+  }
+  .vision__content {
+    font-size: 70%;
+  }
+  .servicios__title {
+    font-size: 90%;
+  }
+  .servicio__title {
+    font-size: 90%;
+  }
+  .servicios__content {
+    font-size: 70%;
+  }
+  .servicio__content {
+    font-size: 70%;
+  }
+  .testimonio__comentario {
+    font-size: 70%;
+  }
+  .testimonio__title {
+    font-size: 90%;
+  }
+  .testimonio__paciente {
+    font-size: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .bienvenida__title {
+    font-size: 70%;
+  }
+  .bienvenida__content {
+    font-size: 60%;
+  }
+  .vision__title {
+    font-size: 65%;
+  }
+  .mision__title {
+    font-size: 65%;
+  }
+  .mision__content {
+    font-size: 60%;
+  }
+  .vision__content {
+    font-size: 60%;
+  }
+  .servicios__title {
+    font-size: 70%;
+  }
+  .servicio__title {
+    font-size: 70%;
+  }
+  .servicios__content {
+    font-size: 60%;
+  }
+  .servicio__content {
+    font-size: 60%;
+  }
+  .testimonio__comentario {
+    font-size: 60%;
+  }
+  .testimonio__title {
+    font-size: 70%;
+  }
+  .testimonio__paciente {
+    font-size: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .bienvenida__title {
+    font-size: 50%;
+  }
+  .bienvenida__content {
+    font-size: 40%;
+  }
+  .vision__title {
+    font-size: 45%;
+  }
+  .mision__title {
+    font-size: 45%;
+  }
+  .mision__content {
+    font-size: 40%;
+  }
+  .vision__content {
+    font-size: 40%;
+  }
+  .servicios__title {
+    font-size: 50%;
+  }
+  .servicio__title {
+    font-size: 50%;
+  }
+  .servicios__content {
+    font-size: 40%;
+  }
+  .servicio__content {
+    font-size: 40%;
+  }
+  .testimonio__comentario {
+    font-size: 40%;
+  }
+  .testimonio__title {
+    font-size: 50%;
+  }
+  .testimonio__paciente {
+    font-size: 50%;
+  }
+}
+#medicos {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#presentacion {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.medicos__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.medico__item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .presentacion__title {
+    font-size: 90%;
+  }
+  .presentacion__content {
+    font-size: 70%;
+  }
+  .vision__title {
+    font-size: 80%;
+  }
+  .mision__title {
+    font-size: 80%;
+  }
+  .mision__content {
+    font-size: 70%;
+  }
+  .vision__content {
+    font-size: 70%;
+  }
+  .medicos__title {
+    font-size: 90%;
+  }
+  .medico__title {
+    font-size: 90%;
+  }
+  .medicos__content {
+    font-size: 70%;
+  }
+  .medico__content {
+    font-size: 70%;
+  }
+  .medico__experience {
+    font-size: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .presentacion__title {
+    font-size: 70%;
+  }
+  .presentacion__content {
+    font-size: 60%;
+  }
+  .vision__title {
+    font-size: 65%;
+  }
+  .mision__title {
+    font-size: 65%;
+  }
+  .mision__content {
+    font-size: 60%;
+  }
+  .vision__content {
+    font-size: 60%;
+  }
+  .medicos__title {
+    font-size: 70%;
+  }
+  .medico__title {
+    font-size: 70%;
+  }
+  .medicos__content {
+    font-size: 60%;
+  }
+  .medico__content {
+    font-size: 60%;
+  }
+  .medico__experience {
+    font-size: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .presentacion_title {
+    font-size: 55%;
+  }
+  .presentacion__content {
+    font-size: 40%;
+  }
+  .vision__title {
+    font-size: 50%;
+  }
+  .mision__title {
+    font-size: 50%;
+  }
+  .mision__content {
+    font-size: 45%;
+  }
+  .vision__content {
+    font-size: 45%;
+  }
+  .medicos__title {
+    font-size: 55%;
+  }
+  .medico__title {
+    font-size: 55%;
+  }
+  .medicos__content {
+    font-size: 45%;
+  }
+  .medico__content {
+    font-size: 45%;
+  }
+  .medico__experience {
+    font-size: 45%;
+  }
+}
+#contacto {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.contacto__formulario {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.ubicacion img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .contacto__title {
+    font-size: 90%;
+  }
+  .contacto__content {
+    font-size: 80%;
+  }
+  .contacto__label {
+    font-size: 80%;
+  }
+  .ubicacion__title {
+    font-size: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .contacto__title {
+    font-size: 70%;
+  }
+  .contacto__content {
+    font-size: 60%;
+  }
+  .contacto__label {
+    font-size: 60%;
+  }
+  .ubicacion__title {
+    font-size: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .contacto__title {
+    font-size: 55%;
+  }
+  .contacto__content {
+    font-size: 50%;
+  }
+  .contacto__label {
+    font-size: 50%;
+  }
+  .ubicacion__title {
+    font-size: 55%;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Bienestar</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="header__navbar">
+        <img
+          src="assets/img/logo.png"
+          alt="logo"
+          class="header__logo"
+        />        
+        <ul class="nav__list">            
+          <a href="index.html">Home</a>
+          <a href="equipo_medico.html">Equipo Medico</a>
+          <a href="contacto.html">Contacto</a>
+        </ul>
+        <section id="cita-medica" class="header__reserva">
+            <a href="#" >Reservar cita</a>
+        </section>                
+    </nav>
+    </header>
+
+    <main>
+ 
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto__section">
+        <h2 class="contacto__title">Contáctanos</h2>
+        <p class="contacto__content">
+          Si tiene alguna duda o inquietud Llena el formulario y nos
+          pondremos en contacto.
+        </p>
+        <div class="contacto__container">
+          <!-- Formulario de contacto -->
+          <form class="contacto__form">
+            <p>
+              <label class="contacto__label" for="name">Nombre completo</label><br />
+              <input
+                type="text"
+                id="name"
+                name="nombre_completo"
+                placeholder="Ej: Juan Perez"
+                required
+                minlength="3"
+              />
+            </p>
+            <p>
+              <label  class="contacto__label" for="email">Correo Electrónico</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="Ej: juanperez@gmail.com"
+              />
+            </p>
+            <p>
+                <label  class="contacto__label" for="name">Asunto</label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name="asunto"
+                  placeholder="Asunto"
+                  required
+                  minlength="3"
+                />
+              </p>            
+            <p>
+              <label  class="contacto__label" for="message">Mensaje</label><br />
+              <textarea
+                name="mensaje"
+                id="message"
+                rows="6"
+                maxlength="500"
+              ></textarea>
+            </p>
+            <p>
+              <button type="submit" class="contacto__button">Enviar</button>
+            </p>
+          </form>
+  
+          <hr />
+
+          <!-- Mapa de ubicación -->
+          <section class="ubicacion">
+            <h2 class="ubicacion__title">Donde Estamos.</h2>
+            <img
+            src="assets/img/Ubicacion.png"
+            alt="servicio urgencia"
+            />      
+          </section>    
+
+
+        </div>
+      </section>
+    </main>
+      
+      <footer id="footer">
+        <div>
+            <hr />
+            <p class="footer__text">Todos los derechos reservados © Clinica Bienestar 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
